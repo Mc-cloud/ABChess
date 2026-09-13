@@ -1,6 +1,6 @@
 (function () {
   // TODO: replace with your deployed backend URL, e.g. https://your-app.onrender.com/move
-  const BACKEND_URL = "https://abchess.onrender.com";
+  const BACKEND_URL = "https://abchess.onrender.com/move";
 
   const game = new Chess();
   let board = null;
