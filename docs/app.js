@@ -156,7 +156,7 @@
     onDragStart: onDragStart,
     onDrop: onDrop,
     onSnapEnd: onSnapEnd,
-    pieceTheme: "img/chesspieces/wikipedia/{piece}.png",
+    pieceTheme: "img/{piece}.png",
   });
 
   updateStatus();
