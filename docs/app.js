@@ -156,7 +156,7 @@
     onDragStart: onDragStart,
     onDrop: onDrop,
     onSnapEnd: onSnapEnd,
-    pieceTheme: "img/{piece}.png",
+    pieceTheme: "pieces/{piece}.png",
   });
 
   updateStatus();
