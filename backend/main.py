@@ -15,7 +15,7 @@ from engine.alphabeta_agent import AlphaBeta_agent
 # leaving it wide open lets any site on the internet spend your free-tier
 # CPU minutes.
 ALLOWED_ORIGINS = [
-    "https://YOUR-GITHUB-USERNAME.github.io",
+    "https://mc-cloud.github.io",
 ]
 
 DEFAULT_MOVE_SECONDS = 3.0
