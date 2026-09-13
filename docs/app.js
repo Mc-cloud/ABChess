@@ -156,8 +156,7 @@
     onDragStart: onDragStart,
     onDrop: onDrop,
     onSnapEnd: onSnapEnd,
-    pieceTheme:
-      "https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/img/chesspieces/wikipedia/{piece}.png",
+    pieceTheme: "img/chesspieces/wikipedia/{piece}.png",
   });
 
   updateStatus();
