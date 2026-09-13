@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+        <title>Alphabeta chess bot - personal project</title>
+        <meta name ="description" content="Play against my alpha-beta chess engine"/>
+        <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css"/>
+    </head>
 
+    <body>
+        <div class="page">
+            <header class="site-header">
+                <h1 class="site-title">AlphaBeta</h1>
+                <p class="site-subtitle">Move a piece to play it</p>
+            </header>
+
+            <main class="layout">
+                <section class="board-panel">
+                    <div id="board" class="board"></div>
+                    <div class="controls">
+                        <button id="newGameBtn" type="button">New game</button>
+                        <button id="flipBtn" type="button">Flip Board</button>
+                        <label class="side-select">
+                            Play as 
+                            <select id="sideSelect">
+                                <option value="white" selected>White</option>
+                                <option value="black">Black</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <p id="status" class="status" aria-live="polite">White to move</p>
+                </section>
+                <aside class="console-panel">
+                    <h2 class="console-title">Engine console</h2>
+                    <div id="console" class="console" aria-live="polite"></div>
+                    <h2 class="console-title">Moves</h2>
+                    <ol id="moveList" class="move-list" aria-label="Move history"></ol>
+                </aside>
+            </main>
+
+            <footer class="site-footer">
+                <p>AlphaBeta searches with iterative deepening, alpha&#8211;beta pruning, 
+                    quiescence search, and a small opening book. The bot may take a few seconds 
+                    on its first move while the backend wakes up.
+                    <a href="https://github.com/Mc-cloud/chessRL">See the full project on github</a>
+                </p>
+            </footer>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
